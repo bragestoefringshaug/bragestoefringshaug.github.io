@@ -1,0 +1,149 @@
+html {
+    background-color: #283034;
+    color:#d9dcdd;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+#name-and-picture{
+    background-color: #1a2023;
+    margin: auto;
+    display: flex;
+    align-items: center; 
+    text-align: center;
+    flex-direction: column;
+}
+
+#profilepic {
+    display: inline;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 4px 2px 25px #00000075;
+    box-shadow: 0 0 0 0.2rem rgba(77, 171, 214, 0.25);
+    transition: 0.15s;
+}
+
+#profilepic:hover {
+    transform: scale(2);
+}
+
+#desc {
+    display: inline;
+    margin: 0;
+}
+
+#desc-container {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+    justify-content: center; 
+}
+
+
+#about-me {
+    background-color: #1a2023;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom:50px;
+    max-width: 500px;
+    padding: 20px;
+    padding-top: 1px;
+    border-radius: 10px;
+    box-shadow: 4px 2px 25px #00000075;
+    transition: 0.15s;
+}
+
+#about-me:hover{
+    scale: 103%;
+    box-shadow: 0 0 0 0.2rem rgba(77, 171, 214, 0.25);
+}
+
+#skills {
+    background-color: #1a2023;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom:50px;
+    max-width: 500px;
+    padding: 20px;
+    padding-top: 1px;
+    border-radius: 10px;
+    box-shadow: 4px 2px 25px #00000075;
+    transition: 0.15s;
+}
+
+#skills:hover{
+    scale: 103%;
+    box-shadow: 0 0 0 0.2rem rgba(77, 171, 214, 0.25);
+}
+
+form {
+    display: relative;
+    background-color: #1a2023;
+    margin: auto;
+    margin-top: 50px;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 2px 25px #00000075;;
+}
+
+#contact {
+    background-color: #1a2023;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom:50px;
+    max-width: 500px;
+    padding: 20px;
+    padding-top: 1px;
+    border-radius: 10px;
+    box-shadow: 4px 2px 25px #00000075;
+    transition: 0.15s;
+}
+
+.contact-item {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px; 
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+}
+
+#desc-icon {
+    display: inline;
+}
+
+#contact:hover{
+    scale: 103%;
+    box-shadow: 0 0 0 0.2rem rgba(77, 171, 214, 0.25);
+}
+
+a {
+    color: #d9dcdd;
+    
+}
+
+.icon {
+    width: 25px;
+    margin-right: 10px;
+    
+}
+
+canvas {
+    display:block;
+}
+
+#skills {
+    position: relative;
+}
+
+#skills-icon {
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 65%;
+    width: 100px;
+    height: 100px;
+}
