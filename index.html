@@ -1,29 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <div id="cursoreffect"></div>
+    <div id="cursoreffectblur"></div>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet">
-    <script href="script.js" rel="script"></script>
     <title>Portfolio</title>
-</script>
 </head>
 <body>
     <form>
+        
         <div id="name-and-picture">
             <img src="/resumepic.JPG" class="picture" id="profilepic" name="profilepic" alt="Brage Støfringshaug">
-            <h1 id="name">Brage Støfringshaug</h1>
+            <h1 id="name" data-value="Brage Støfringshaug">Brage Støfringshaug</h1>
             <div id="desc-container">
                 <p id="desc">Data Science Student</p>
                 <img id="desc-icon" src="https://img.icons8.com/?size=100&id=32936&format=png&color=ffffff" class="icon">
             </div>
         </div>
         <div id="about-me">
-            <h2>About me</h2>
-            <p id="age">Age: 22</p>
-            <p id="location">Location: Bergen, Norway</p>
-            <p id="education">Education: Undergoing <a href="https://www4.uib.no/program/informasjonsvitskap-bachelor?gad_source=1&gclid=Cj0KCQiAqL28BhCrARIsACYJvkdI42Oo4hmiXaPEV5f4Z2wk5PF3cvt_dlCagAWvpQ_-UCWGr0yheJcaAg3bEALw_wcB">Bachelor in Data Science</a> @ <a href="https://www.uib.no">UiB</a></p>
-            <p id="about">I am a student at the University of Bergen, studying Data Science. I have a passion for programming and data analysis, and I am always looking for new challenges. I am currently looking for internships and part-time jobs to combine with my studies.</p>
+            <h2>About Me</h2>
+            <div id="age-div">
+                <img src="https://img.icons8.com/?size=100&id=101272&format=png&color=ffffff" id="age-icon" class="icon">
+                <p id="age">22 years old</p>
+            </div>
+            <div id="location-div">
+                <img src="https://img.icons8.com/?size=100&id=84891&format=png&color=ffffff" id="location-icon" class="icon">
+                <p id="location">Bergen, Norway</p>
+            </div>
+            <div id="education-div">
+                <img src="https://img.icons8.com/?size=100&id=87771&format=png&color=ffffff" id="education-icon" class="icon">
+                <p id="education">Undergoing <a href="https://www4.uib.no/program/informasjonsvitskap-bachelor?gad_source=1&gclid=Cj0KCQiAqL28BhCrARIsACYJvkdI42Oo4hmiXaPEV5f4Z2wk5PF3cvt_dlCagAWvpQ_-UCWGr0yheJcaAg3bEALw_wcB">Bachelor in Data Science</a> @ <a href="https://www.uib.no">UiB</a></p>
+            </div>
+            <div id="about-me-div">
+                <img src="https://img.icons8.com/?size=100&id=84898&format=png&color=ffffff" id="about-me-icon" class="icon">
+                <p id="about">I am a student at the University of Bergen, studying Data Science. I have a passion for programming and data analysis, and I am always looking for new challenges. I am currently looking for internships and part-time jobs to combine with my studies.</p>
+            </div>
         </div>
         <div id="skills">
             <h2>Skills</h2>
@@ -48,10 +61,11 @@
                 <a href="mailto:bragestofringshaug@gmail.com"><img src="https://img.icons8.com/?size=100&id=86862&format=png&color=ffffff" id="email-icon" class="icon"></a><a href="mailto:bragestofringshaug@gmail.com">bragestofringshaug@gmail.com</a>
             </div>
             <h3 id="socials">Socials</h3>
-            <a href="https://www.google.com" class="socials"><img src="https://img.icons8.com/?size=100&id=84888&format=png&color=ffffff" id="linkedin-icon" class="icon"></a>
+            <a href="https://www.linkedin.com/in/brage-støfringshaug-313379346/" class="socials"><img src="https://img.icons8.com/?size=100&id=84888&format=png&color=ffffff" id="linkedin-icon" class="icon"></a>
             <a href="https://github.com/bragestoefringshaug/" class="socials"><img src="https://img.icons8.com/?size=100&id=20675&format=png&color=ffffff" id="github-icon" class="icon"></a>
             <a href="https://www.instagram.com/bragesto/" class="socials"><img src="https://img.icons8.com/?size=100&id=84884&format=png&color=ffffff" id="instagram-icon" class="icon"></a>
         </div>
     </form>
+    <script src="script.js"></script>
 </body>
 </html>

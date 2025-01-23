@@ -1,7 +1,14 @@
-html {
-    background-color: #283034;
+html{
     color:#d9dcdd;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family:'Space Mono', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    min-height:100vh;
+}
+
+body{
+    background-color: #1a2023;
+    margin: 0;
+    min-height:100vh;
 }
 
 #name-and-picture{
@@ -146,4 +153,64 @@ canvas {
     margin-left: 65%;
     width: 100px;
     height: 100px;
+}
+
+#location-div {
+    display: flex;
+    align-items: center;
+}
+
+#age-div {
+    display: flex;
+    align-items: center;
+}
+
+#education-div {
+    display: flex;
+    align-items: center;
+}
+
+#about-me-div {
+    display: flex;
+    align-items: center;
+}
+
+#cursoreffect {
+    background-color: white;
+    height: 250px;
+    aspect-ratio: 1;
+    position:absolute;
+    left:50%;
+    top:50%;
+    translate:-50% -50%;
+    border-radius: 50%;
+    background: linear-gradient(to right, aquamarine, mediumpurple);
+    animation: rotate 20s infinite;
+    z-index: -2;
+}
+
+#cursoreffectblur {
+    left: 0;
+    top: 0;
+    display: flex;
+    min-height:100%;
+    min-width:100%;
+    position: fixed;
+    z-index: -1;
+    backdrop-filter: blur(180px);
+    overflow: auto;
+}
+
+@keyframes rotate {
+    from {
+        rotate: 0deg;
+    }
+
+    50% {
+        scale: 1 1.5;
+    }
+
+    to {
+        rotate: 360deg;
+    }
 }
