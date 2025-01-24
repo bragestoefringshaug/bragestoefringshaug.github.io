@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+::-webkit-scrollbar {
+    display: none;
+  }
+
 html{
     color:#d9dcdd;
-    font-family:'Space Mono', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Poppins', 'Space Mono', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     min-height:100vh;
 }
@@ -9,10 +14,26 @@ body{
     background-color: #1a2023;
     margin: 0;
     min-height:100vh;
+    overflow-x: hidden;
+
 }
 
-#name-and-picture{
-    background-color: #1a2023;
+#fake-border{
+    padding-top:10px;
+    position: absolute;
+    top:8px;
+    border-radius: 50%;
+    background: linear-gradient(to right, aquamarine, mediumpurple);
+    width: 104px;
+    height: 94px;;
+    z-index: 0;
+    animation: rotate 3s infinite;
+    filter: blur(0px);
+}
+
+
+.name-and-picture{
+    padding-top:10px;
     margin: auto;
     display: flex;
     align-items: center; 
@@ -20,19 +41,23 @@ body{
     flex-direction: column;
 }
 
+
 #profilepic {
     display: inline;
     width: 100px;
     height: 100px;
     border-radius: 50%;
     overflow: hidden;
-    box-shadow: 4px 2px 25px #00000075;
-    box-shadow: 0 0 0 0.2rem rgba(77, 171, 214, 0.25);
     transition: 0.15s;
+    z-index: 1;
 }
 
-#profilepic:hover {
-    transform: scale(2);
+.name-and-picture:has(#profilepic:hover) > #profilepic{
+    scale:200%
+}
+.name-and-picture:has(#profilepic:hover) > #fake-border{
+    scale:200%;
+    animation: 0;
 }
 
 #desc {
@@ -84,7 +109,7 @@ body{
     box-shadow: 0 0 0 0.2rem rgba(77, 171, 214, 0.25);
 }
 
-form {
+/*form {
     display: relative;
     background-color: #1a2023;
     margin: auto;
@@ -93,7 +118,7 @@ form {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 4px 2px 25px #00000075;;
-}
+} Commented out because no longer used*/
 
 #contact {
     background-color: #1a2023;
@@ -117,6 +142,7 @@ form {
 .icon {
     width: 25px;
     height: 25px;
+    z-index: 2;
 }
 
 #desc-icon {
@@ -185,7 +211,7 @@ canvas {
     translate:-50% -50%;
     border-radius: 50%;
     background: linear-gradient(to right, aquamarine, mediumpurple);
-    animation: rotate 20s infinite;
+    animation: rotateandscale 20s infinite;
     z-index: -2;
 }
 
@@ -197,11 +223,11 @@ canvas {
     min-width:100%;
     position: fixed;
     z-index: -1;
-    backdrop-filter: blur(180px);
+    backdrop-filter: blur(150px);
     overflow: auto;
 }
 
-@keyframes rotate {
+@keyframes rotateandscale {
     from {
         rotate: 0deg;
     }
@@ -215,6 +241,18 @@ canvas {
     }
 }
 
+@keyframes rotate {
+    from {
+        rotate: 0deg;
+    }
+    50% {
+        scale: 1.05;
+    }
+    to {
+        rotate: 360deg;
+    }
+}
+
 .socials-icon {
     width: 25px;
     height: 25px;
@@ -223,6 +261,12 @@ canvas {
 }
 
 .socials-icon:hover {
-    transform: scale(1.5);
+    transform: scale(1.5) translateY(-10%);
     transition: .3s;
+}
+
+.gradient-text {;
+    background: linear-gradient(to right, aquamarine, mediumpurple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
