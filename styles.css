@@ -21,6 +21,7 @@ body{
 }
 
 #fake-border{
+    margin-top:50px;
     padding-top:10px;
     position: absolute;
     top:8px;
@@ -37,10 +38,15 @@ body{
 .name-and-picture{
     padding-top:10px;
     margin: auto;
+    margin-top: 50px;
     display: flex;
     align-items: center; 
     text-align: center;
     flex-direction: column;
+}
+
+#name {
+    margin-top:50px;
 }
 
 
@@ -271,4 +277,55 @@ canvas {
     background: linear-gradient(to right, aquamarine, mediumpurple);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.card {
+    background-color: #1a2023;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom:50px;
+    max-width: 500px;
+    padding: 20px;
+    padding-top: 1px;
+    border-radius: 10px;
+    box-shadow: 4px 2px 25px #00000075;
+    transition: 0.15s;
+}
+
+#projects {
+    visibility: collapse;
+  /*  display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;*/
+}
+
+/*.projects { Project cards commented out because not used yet.
+    width: 250px;
+    height: 350px;
+    position: relative;
+    margin:50px;
+}*/
+
+#card1 {
+    transform: rotate(5deg);
+    background: url(https://epicode.com/wp-content/uploads/2022/08/html-e-css-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+#card2 {
+    transform: rotate(-5deg);
+    background: url(https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+#card3 {
+    transform: rotate(-15deg);
+    background: url(https://cdn3.pixelcut.app/7/20/uncrop_hero_bdf08a8ca6.jpg);
+    background-size: cover;
+    background-position: center;
 }
